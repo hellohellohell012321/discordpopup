@@ -138,3 +138,17 @@ local function C_c()
 end
 task.spawn(C_c)
 return G2L["1"], require
+
+
+
+
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+
+for i = 1, 3 do
+    Notification:Notify(
+       {Title = "you can now copy the discord link", Description = "better join it lil bro"},
+       {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 8, Type = "default"}
+    )
+end
