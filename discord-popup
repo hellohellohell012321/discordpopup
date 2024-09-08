@@ -141,3 +141,111 @@ end
 task.spawn(C_c)
 return G2L["1"], require
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local G2L = {};
+
+-- StarterGui.nigga
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[nigga]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.nigga.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 145, 122);
+G2L["2"]["Size"] = UDim2.new(0, 0, 0, 0);  -- Start from 0 size for pop-out effect
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5); -- Anchor to center
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0); -- Centered on screen
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+-- Pop-out animation
+local TweenService = game:GetService("TweenService")
+local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+local goal = {Size = UDim2.new(0, 308, 0, 127)} -- Final size of the frame
+local tween = TweenService:Create(G2L["2"], tweenInfo, goal)
+tween:Play()  -- Play pop-out animation
+
+-- StarterGui.nigga.Frame.TextLabel
+G2L["3"] = Instance.new("TextLabel", G2L["2"]);
+G2L["3"]["TextWrapped"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextScaled"] = true;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["TextSize"] = 14;
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["BackgroundTransparency"] = 1;
+G2L["3"]["Size"] = UDim2.new(0, 308, 0, 50);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[yo bro! did you use a keysystem for this script?]];
+
+-- StarterGui.nigga.Frame.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Size"] = UDim2.new(0, 263, 0, 58);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[funny thing is, you dont actually need to! some skid stole our script cause they were so untalented and they coudnt make their own script ):]];
+G2L["4"]["Position"] = UDim2.new(0.07143, 0, 0.32677, 0);
+
+-- StarterGui.nigga.Frame.understood
+G2L["5"] = Instance.new("TextButton", G2L["2"]);
+G2L["5"]["TextWrapped"] = true;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["TextSize"] = 14;
+G2L["5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["TextScaled"] = true;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(161, 188, 255);
+G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["5"]["Size"] = UDim2.new(0, 200, 0, 20);
+G2L["5"]["Name"] = [[understood]];
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Text"] = [[understood]];
+G2L["5"]["Position"] = UDim2.new(0.17532, 0, 0.78346, 0);
+
+-- StarterGui.nigga.Frame.ImageLabel
+G2L["6"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["6"]["ZIndex"] = -2;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["ImageColor3"] = Color3.fromRGB(255, 214, 205);
+G2L["6"]["Image"] = [[http://www.roblox.com/asset/?id=10078767149]];
+G2L["6"]["Size"] = UDim2.new(0, 77, 0, 69);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0, 0, 0.45669, 0);
+
+-- Destroy GUI when 'understood' button is clicked
+G2L["5"].MouseButton1Click:Connect(function()
+    G2L["1"]:Destroy()
+end)
+
+return G2L["1"], require;
