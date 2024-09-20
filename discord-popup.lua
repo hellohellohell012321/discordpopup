@@ -118,7 +118,7 @@ local function C_b()
     local frame = screenGui:WaitForChild("Frame")
     local copyButton = frame:WaitForChild("copy")
     local function onCopyButtonClicked()
-        local link = "https://discord.gg/sillyscripts"
+        local link = "https://discord.gg/stxllar"
         setclipboard(link)
     end
     copyButton.MouseButton1Click:Connect(onCopyButtonClicked)
