@@ -1,1 +1,155 @@
-print("hi")
+local starter = Instance.new("Sound") -- Corrected to use Instance.new
+starter.Parent = game.Players.LocalPlayer.PlayerGui
+starter.SoundId = "rbxassetid://1839246711"
+starter.Volume = 10
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+starter:Play()
+
+
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+local textLabel = Instance.new("TextLabel", screenGui)
+local closeButton = Instance.new("TextButton", textLabel)
+
+-- Configure TextLabel
+textLabel.Text = "IMAGINE TRYING TO SKID DTI GUI LMFAO "
+textLabel.Size = UDim2.new(0.7, 0, 0.6, 0)
+textLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+textLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+textLabel.BackgroundTransparency = 0
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+
+-- Configure Close Button
+closeButton.Text = "X"
+closeButton.Size = UDim2.new(0.1, 0, 0.2, 0)
+closeButton.Position = UDim2.new(0.9, 0, 0, 0)
+closeButton.AnchorPoint = Vector2.new(0.5, 0)
+closeButton.BackgroundColor3 = Color3.new(1, 0, 0)
+closeButton.TextColor3 = Color3.new(1, 1, 1)
+closeButton.Font = Enum.Font.SourceSansBold
+closeButton.TextScaled = true
+
+
+-- Function to change colors
+local function randomColor()
+    return Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
+end
+
+-- Function to flash rainbow colors
+local function flashRainbowText()
+    while textLabel do
+        textLabel.BackgroundColor3 = randomColor()
+        textLabel.TextColor3 = randomColor()
+        wait(0.1) -- Adjust the speed of color change
+    end
+end
+
+
+
+
+
+
+local function boobs()
+    
+    
+    -- StarterGui.ScreenGui
+local ScreenGui = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- StarterGui.ScreenGui.ImageLabel
+local FullScreenImage = Instance.new("ImageLabel", ScreenGui)
+FullScreenImage.BorderSizePixel = 0
+FullScreenImage.BackgroundColor3 = Color3.fromRGB(66, 9, 7)
+FullScreenImage.Image = "rbxassetid://5788533331"
+FullScreenImage.Size = UDim2.new(1, 0, 1, 0)  -- Fill the entire screen
+FullScreenImage.Position = UDim2.new(0, 0, 0, 0)  -- Start at the top-left corner
+FullScreenImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+
+
+
+
+
+
+end
+
+
+
+
+
+local function cooked()
+    while true do
+    Instance.new("Part")
+    end
+    end
+
+
+
+
+
+
+
+
+local function sus()
+    
+    local soundId1 = "rbxassetid://615014981" -- Replace with your first sound ID
+    
+    local sound1 = Instance.new("Sound", player:WaitForChild("PlayerGui"))
+    sound1.SoundId = soundId1
+    sound1.Volume = 10
+    sound1.Looped = true
+
+    -- Set the time position (in seconds) to start playing from
+    sound1.TimePosition = 7 -- Start from 10 seconds in
+
+    -- Play first sound and handle end event
+    sound1:Play()
+    sound1:Play()
+    sound1:Play()
+    sound1:Play()
+    
+    
+end
+
+
+
+
+
+-- Function to handle audio playback
+local function playAudio()
+    spawn(sus)
+    spawn(sus)
+    spawn(sus)
+    spawn(sus)
+    wait(1)
+    cooked()
+end
+
+-- Connect button to close GUI
+closeButton.MouseButton1Click:Connect(function()
+    screenGui:Destroy()
+    boobs()
+    starter:Stop()
+    playAudio()
+    playAudio()
+    playAudio()
+    playAudio()
+    playAudio()
+end)
+
+-- Start flashing
+flashRainbowText()
