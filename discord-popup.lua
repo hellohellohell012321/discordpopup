@@ -185,7 +185,7 @@ G2L["g"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["g"]["BackgroundTransparency"] = 1;
 G2L["g"]["Size"] = UDim2.new(0, 308, 0, 50);
 G2L["g"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["g"]["Text"] = [[yo bro! did you use a keysystem for this script?]];
+G2L["g"]["Text"] = [[ATTENTION!!]];
 
 -- StarterGui.nigga.Frame.TextLabel
 G2L["a"] = Instance.new("TextLabel", G2L["i"]);
@@ -199,7 +199,7 @@ G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["BackgroundTransparency"] = 1;
 G2L["a"]["Size"] = UDim2.new(0, 263, 0, 58);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[funny thing is, you dont actually need to! some skid stole our script cause they were so untalented and they coudnt make their own script ):]];
+G2L["a"]["Text"] = [[a ton of the members from the discord server got kicked. please rejoin!! discord.gg/stxllar.]];
 G2L["a"]["Position"] = UDim2.new(0.07143, 0, 0.32677, 0);
 
 -- StarterGui.nigga.Frame.understood
